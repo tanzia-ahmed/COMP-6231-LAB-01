@@ -12,19 +12,25 @@ public class Client {
 		// Checking Account
 		BankAccount ca = null;
 		try {
-			ca = new CheckingAccount(); //constructor
+			ca = new CheckingAccount(); //default constructor
 			//ca = new CheckingAccount(100.00,10.0); //parameterized constructor
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		//Savings Account with constructor
-		BankAccount sa1 = new SavingsAccount();
+		//Savings Account 1
+		BankAccount sa1 = null;
+		try {
+			sa1 = new SavingsAccount(); //default constructor
+			// sa1 = new SavingsAccount(60.0,2.0); //parameterized constructor
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
-		//Savings Account
+		//Savings Account 2
 		BankAccount sa2 = null;
 		try {
-			sa2 = new SavingsAccount(); //constructor
+			sa2 = new SavingsAccount(); //default constructor
 			// sa2 = new SavingsAccount(60.0,2.0); //parameterized constructor
 		} catch (Exception e) {
 			e.printStackTrace();
